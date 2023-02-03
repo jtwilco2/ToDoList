@@ -1,0 +1,113 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.body {
+  background: white;
+  background-image: radial-gradient(grey 0.5px, transparent 0);
+  background-size: 3px 3px;
+  background-position: -1px -1px;
+}
+
+.todo_delete_button {
+  float: right;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(159, 156, 156);
+  border-radius: 100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+  background-color:rgb(159, 156, 156);
+  transition: all 0.3s ease;
+}
+
+.todo_submit_button {
+  width: 25%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid grey;
+  color: black;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.todo_input {
+  width: 65%;
+  padding: 12px 20px;
+  margin: 8px 4px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.todo_task {
+  background-color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(159, 156, 156);
+  text-align: left;
+}
+
+.todo_length {
+  background-color: white;
+  box-shadow: 2px black;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.todo_entire {
+  background-color: white;
+  box-shadow: 1px 1px 0.5px grey;
+  min-width: 400px;
+  width: fit-content;
+  height: fit-content;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
